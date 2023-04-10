@@ -1,0 +1,12 @@
+.intro {
+  margin: 0 auto;
+  width: 94%;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.intro:hover {
+  transform: scale(1.1);
+}
