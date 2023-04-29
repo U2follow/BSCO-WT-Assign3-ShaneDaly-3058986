@@ -34,7 +34,7 @@ export const DetailsPages = () => {
   }, [path]);
 
   // file create garne time add garne
-  const PublicFlo = "http://localhost:5000/images/";
+  const PublicFlo = process.env.REACT_APP_BACKEND_URL + "/images/";
   const { user } = useContext(Context);
 
   const handleDelete = async () => {

@@ -4,7 +4,7 @@ module.exports = function (app) {
   app.use(
     ["/auth", "/users", "/posts", "/category"],
     createProxyMiddleware({
-      target: "http://localhost:5000",
+      target: process.env.REACT_APP_BACKEND_URL,
       changeOrigin: true,
     })
   );

@@ -1,5 +1,5 @@
 const router = require("express").Router();           //import from express router methode
-const Category = require("../model/Category");      ///import the category model
+const Category = require("../model/category");      ///import the category model
 
 router.post("/", async (req, res) => {
   const newCat = new Category(req.body);

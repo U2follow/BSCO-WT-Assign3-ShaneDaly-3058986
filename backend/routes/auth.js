@@ -1,5 +1,5 @@
 const router = require("express").Router();       //import from express router methode
-const User = require("../model/User");        //import user model
+const User = require("../model/user");        //import user model
 const bcrypt = require("bcrypt");         //bcrypt is a library that enable us to encrypt data
 
 // regsiter

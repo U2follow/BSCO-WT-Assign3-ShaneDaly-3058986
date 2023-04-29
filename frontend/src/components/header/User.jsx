@@ -19,7 +19,7 @@ export const User = () => {
     setProfileOpen(false);
   };
 
-  const PublicFlo = "http://localhost:5000/images/";
+  const PublicFlo = process.env.REACT_APP_BACKEND_URL + "/images/";
 
   return (
     <>

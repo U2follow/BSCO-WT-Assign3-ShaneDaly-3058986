@@ -17,7 +17,6 @@ app.use(express.json());
 
 app.use("/images", express.static(path.join(__dirname, "/images")));
 mongoose.set('strictQuery', false);
-
 mongoose
   .connect(
     process.env.MONGO_URI,
@@ -51,6 +50,6 @@ app.use("/posts", authPost);
 app.use("/category", authCat);
 // app.use("comment", commRoute);
 
-app.listen("5000", () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("backend running...");
 });
